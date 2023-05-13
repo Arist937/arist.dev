@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 50px;
-
-  margin-top: 50px;
+  margin-top: 3vh;
 }
 
 .resize {

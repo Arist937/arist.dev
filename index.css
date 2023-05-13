@@ -7,28 +7,55 @@ a {
 body {
   background-color:#F9F5EB;
   font-family: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-sans;
-
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .container {
   color: #503F31;
-  width: 90vh;
-  margin-top: 50px;
-
+  width: 90%;
+  height: auto;
   display: flex;
   flex-direction: column;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divider {
+  width: 100%;
+  border: 1px solid #7E685B;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 45%;
+  }
+
+  .intro-container {
+    flex-direction: row;
+    column-gap: 3vw;
+  }
+
+  .divider {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+  }
 }
 
 .section {
   color: #7E685B;
 }
 
-.text-grid {
+.content-grid {
   display: grid;
-  grid-template-columns: 10% 90%;
-  column-gap: 50px;
+  grid-template-columns: auto auto;
+  column-gap: 30px;
 }
 
 .link-container {
@@ -40,22 +67,8 @@ body {
 .photo {
   border: 1px solid #503F31;
   border-radius: 50%;
-  height: 175px;
-  width: 175px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   object-position: center;
-}
-
-.intro-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  column-gap: 40px;
-}
-
-.divider {
-  width: 100%;
-  border-top: 1px solid #503F31;
-  margin-top: 30px;
-  margin-bottom: 20px;
 }
