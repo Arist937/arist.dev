@@ -1,0 +1,13 @@
+.img-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 50px;
+
+  margin-top: 50px;
+}
+
+.resize {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
