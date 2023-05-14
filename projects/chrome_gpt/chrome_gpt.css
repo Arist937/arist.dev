@@ -5,8 +5,8 @@
   margin-top: 3vh;
 }
 
-.resize {
-  border-radius: 10px;
+.demo {
   width: 100%;
-  height: auto;
+  max-width: 600px;
+  margin-top: 16px;
 }
